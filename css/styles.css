@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+html {
+
+        font-size: 16px; /* 1rem  */
+
+}
+
+.container-header{
+
+    max-width:1920px;
+    margin: 0 auto;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    background-color: #2980B9;
+    padding: 2.5rem;
+}
+
+body{
+    margin: 0;
+    background-color: #2471A3;
+}
+
+.container-main{
+
+    width: 20%;
+    max-width:1920px;
+    margin: 0 auto;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+}
+
+.titulo-frase{
+    
+    font-family: 'Ubuntu Mono', monospace;
+    text-align: center;
+    flex: 1 0 100%;
+    
+
+}
+
+
+.container-footer{
+    display:flex;
+    background-color: #1A5276;
+
+}
+
+.frase-campeon {
+
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    flex: 1 0 100%;
+}
+
+.container-boton{
+    flex: 1;
+    gap: 1rem;
+    display:flex;
+    flex-flow: column wrap;
+    
+}
+
+#boton-campeon, #boton-comparar{
+   
+    flex: 2 0;
+    padding: 0.7rem; 
+}
+

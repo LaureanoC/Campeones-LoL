@@ -1,5 +1,5 @@
 var botonBuscar = document.querySelector("#boton-comparar");
-const TotalCampeones = 4-1; //Total - 1 para los arrays
+const TotalCampeones = 8-1; //Total - 1 para los arrays
 const TotalFrases = 4-1; //Total -1 para las frases
 botonBuscar.addEventListener("click", function(){
 
@@ -10,18 +10,14 @@ botonBuscar.addEventListener("click", function(){
     
     var campeones = xhr.responseText; 
     campeones = JSON.parse(campeones);
-    
 
     var posicionCampeon = aleatorio(TotalCampeones);  // De campeones
     var posicionFrase= aleatorio(TotalFrases);                // Cantidad de frases
-    
-
-    posicionarAleatoriamente(campeones);
-    devolverFraseActual();
     cambiarFraseActual(campeones,posicionCampeon,posicionFrase);
     cambiarNombreBoton(campeones,posicionCampeon, posicionFrase);
+    console.log("Fin del cambiar nombre boton + " + campeones[posicionCampeon].nombre);
  
-    })
+    });
     
     xhr.send();
 

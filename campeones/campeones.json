@@ -19,6 +19,25 @@
     },
 
     {
+        "nombre": "Yuumi",
+        "frases": [
+            "¿M3 perd0nas?",
+            "Pescadito pescadito!"
+            
+        ]
+        
+    },
+
+    {
+        "nombre":"Vayne",
+        "frases": [
+            "Cacemos a los que han caído en la oscuridad",
+            "Necios impuros"
+        ]
+
+    },
+
+    {
         "nombre": "Rengar",
         "frases": [
             "¡Esta noche iremos de caza!",
@@ -31,6 +50,15 @@
         "frases": [
             "La violencia lo arregla todo",
             "¿Lo que huelo es miedo?"
+        ]
+
+    },
+
+    {
+        "nombre":"Azir",
+        "frases": [
+            "Cucurrucuru paloma...",
+            "Shurima, tu emperador ha vuelto..."
         ]
 
     }

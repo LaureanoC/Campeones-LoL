@@ -80,9 +80,9 @@ function devolverFraseActual(){
 
 function devolverArrayDeTres(opciones,opcionCorrecta){
 
-    if(opciones.indexOf(opcionCorrecta)>=3){
+    if(opciones.indexOf(opcionCorrecta)>=4){
 
-        opciones = opciones.slice(0,2);
+        opciones = opciones.slice(0,3);
         opciones.push(opcionCorrecta);
         console.log(opciones);
         return opciones;

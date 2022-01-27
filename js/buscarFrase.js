@@ -7,13 +7,35 @@ botonBuscar.addEventListener("click", function(){
     
     xhr.addEventListener("load",function(){
     
-    console.log(xhr.responseText);
     var campeones = xhr.responseText;
     campeones = JSON.parse(campeones);
     console.log(campeones);
-    
-    
+    console.log(campeones[0].nombre + " Con su frase: " + campeones[0].frases[0]);
+    cambiarFrase(campeones,aleatorio(1));
+ 
     })
     
     xhr.send();
+
 });
+
+
+function aleatorio(n){
+
+    var numero = Math.round((Math.random()*n));
+    return numero;
+}
+
+
+function cambiarFrase(campeon,i,j){
+
+        var parrafo = document.querySelector("#frase-campeon");
+        
+        parrafo.innerHTML = campeon[i].frases[j] ;
+      
+    
+        
+}
+
+
+

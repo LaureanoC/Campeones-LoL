@@ -11,9 +11,27 @@
     {
         "nombre": "Yasuo",
         "frases": [
-            "Haseki"
+            "¡Haseki!",
+            "¡Sorieketon!"
             
         ]
         
+    },
+
+    {
+        "nombre": "Rengar",
+        "frases": [
+            "¡Esta noche iremos de caza!",
+            "Un premio apropiado"
+        ]
+    },
+
+    {
+        "nombre":"Katarina",
+        "frases": [
+            "La violencia lo arregla todo",
+            "¿Lo que huelo es miedo?"
+        ]
+
     }
 ]

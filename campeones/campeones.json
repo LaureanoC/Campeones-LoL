@@ -1,17 +1,19 @@
-{
-    "arraycampeoness":[{
-            "Zed": [
-                "La espada sombria es la mas mortifera", "La sombra asesina gana"
-            ],
-            "Yasuo": [
-                "Haseki"
-            ],
+[
+    {
+        "nombre": "Zed",
+        "frases": [
+            "La espada invisible es la mas mortifera", 
+            "La espada sombría gana"
+        ]
+        
+    },
 
-            "Reneketon":[
-
-                "¿Qué? ¿Se me quedó alguien en el diente?"
-            ]
+    {
+        "nombre": "Yasuo",
+        "frases": [
+            "Haseki"
             
-        }
-    ]
-}
+        ]
+        
+    }
+]

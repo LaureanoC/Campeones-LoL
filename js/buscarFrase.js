@@ -1,5 +1,6 @@
 var botonBuscar = document.querySelector("#boton-comparar");
-
+const TotalCampeones = 4-1; //Total - 1 para los arrays
+const TotalFrases = 2-1; //Total -1 para las frases
 botonBuscar.addEventListener("click", function(){
 
     var xhr = new XMLHttpRequest;
@@ -7,11 +8,18 @@ botonBuscar.addEventListener("click", function(){
     
     xhr.addEventListener("load",function(){
     
-    var campeones = xhr.responseText;
+    var campeones = xhr.responseText; 
     campeones = JSON.parse(campeones);
-    console.log(campeones);
-    console.log(campeones[0].nombre + " Con su frase: " + campeones[0].frases[0]);
-    cambiarFrase(campeones,aleatorio(1));
+    
+
+    var posicionCampeon = aleatorio(TotalCampeones);  // De campeones
+    var posicionFrase= aleatorio(1);                // Cantidad de frases
+    
+
+    posicionarAleatoriamente(campeones);
+    devolverFraseActual();
+    cambiarFraseActual(campeones,posicionCampeon,posicionFrase);
+    cambiarNombreBoton(campeones,posicionCampeon, posicionFrase);
  
     })
     
@@ -19,23 +27,96 @@ botonBuscar.addEventListener("click", function(){
 
 });
 
-
 function aleatorio(n){
 
-    var numero = Math.round((Math.random()*n));
-    return numero;
+    return Math.round(Math.random()*n);
+
 }
 
+function posicionarAleatoriamente(campeones){
 
-function cambiarFrase(campeon,i,j){
+    var lista = [];
+    for(i=0; i<=TotalCampeones; i++){
 
-        var parrafo = document.querySelector("#frase-campeon");
-        
-        parrafo.innerHTML = campeon[i].frases[j] ;
-      
-    
-        
+        lista.push(campeones[i].nombre);
+
+    }
+//Me desordena la lista.
+    lista = lista.sort(function(){
+        return Math.random() - 0.5
+    })
+
+    return lista;
+
 }
 
+function cambiarFraseActual(campeones,pcamp,pfrase){
 
+    var parrafo = document.querySelector("#frase-campeon");
+
+    var fraseActual = devolverFraseActual();
+    console.log("Frase actual: " + fraseActual);
+    var fraseSiguiente = campeones[pcamp].frases[pfrase];
+
+
+    if(fraseActual != fraseSiguiente){
+        console.log("Son diferentes -> " + fraseActual + "  " + fraseSiguiente);
+        parrafo.innerHTML = fraseSiguiente;
+        
+    }
+    else {
+        console.log("Son iguales -> "+ fraseActual + " " + fraseSiguiente);
+        fraseSiguiente = cambiarFraseActual(campeones,pcamp,aleatorio(TotalFrases));
+    }
+
+}
+
+function devolverFraseActual(){
+
+    var parrafo = document.querySelector("#frase-campeon");
+    return parrafo.innerHTML
+
+}
+
+function devolverArrayDeTres(opciones,opcionCorrecta){
+
+    if(opciones.indexOf(opcionCorrecta)>=3){
+
+        opciones = opciones.slice(0,2);
+        opciones.push(opcionCorrecta);
+        console.log(opciones);
+        return opciones;
+    }
+    else {
+
+        return opciones;
+    }
+
+}
+
+function cambiarNombreBoton(campeones,pcamp,pfrase){
+
+    botones = document.querySelectorAll("#boton-campeon");
+
+
+    var fraseCampeon = campeones[pcamp].frases[pfrase];
+    var nombreCampeon = campeones[pcamp].nombre;
+
+    console.log(campeones[pcamp].nombre + ": " + fraseCampeon);
+
+    opciones = posicionarAleatoriamente(campeones);
+
+    console.log(opciones.indexOf(nombreCampeon));
+
+    console.log(opciones);
+
+    opciones = devolverArrayDeTres(opciones, nombreCampeon);
+
+    for (i=0; i<botones.length; i++){
+
+        botones[i].innerHTML = opciones[i];
+        
+    }
+
+}
 

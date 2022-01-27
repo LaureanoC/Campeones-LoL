@@ -3,7 +3,9 @@
         "nombre": "Zed",
         "frases": [
             "La espada invisible es la mas mortifera", 
-            "La espada sombría gana"
+            "La espada sombría gana",
+            "Solo los dignos sobreviviran",
+            "Soy el filo en la oscuridad"
         ]
         
     },
@@ -12,7 +14,9 @@
         "nombre": "Yasuo",
         "frases": [
             "¡Haseki!",
-            "¡Sorieketon!"
+            "¡Sorieketon!",
+            "La muerte es como el viento, siempre a mi lado",
+            "Los tontos no tienen cura"
             
         ]
         
@@ -22,7 +26,9 @@
         "nombre": "Yuumi",
         "frases": [
             "¿M3 perd0nas?",
-            "Pescadito pescadito!"
+            "Pescadito pescadito!",
+            "Extraño como mi yordle me rascaba detras de las orejas",
+            "¡Este es mi capítulo favorito!"
             
         ]
         
@@ -32,7 +38,9 @@
         "nombre":"Vayne",
         "frases": [
             "Cacemos a los que han caído en la oscuridad",
-            "Necios impuros"
+            "Necios impuros",
+            "No tengo tiempo para tonterias",
+            "Limpio su sangre con plata"
         ]
 
     },
@@ -41,7 +49,9 @@
         "nombre": "Rengar",
         "frases": [
             "¡Esta noche iremos de caza!",
-            "Un premio apropiado"
+            "Un premio apropiado",
+            "Sus cabezas adornaran mi pared",
+            "Otra pieza para mi colección"
         ]
     },
 
@@ -49,7 +59,9 @@
         "nombre":"Katarina",
         "frases": [
             "La violencia lo arregla todo",
-            "¿Lo que huelo es miedo?"
+            "¿Lo que huelo es miedo?",
+            "Sangre para noxus",
+            "Las cuchillas son el mejor amigo para una chica"
         ]
 
     },
@@ -58,7 +70,20 @@
         "nombre":"Azir",
         "frases": [
             "Cucurrucuru paloma...",
-            "Shurima, tu emperador ha vuelto..."
+            "Shurima, tu emperador ha vuelto...",
+            "¡Su emperador regresará!",
+            "¡Contempla la ira del desierto!"
+        ]
+
+    },
+
+    {
+        "nombre":"Amummu",
+        "frases": [
+            "Pensé que nunca me escogerías",
+            "Vamos a buscar amigos...",
+            "Juega conmigo",
+            "Seremos amigos para siempre"
         ]
 
     }

@@ -1,6 +1,6 @@
 var botonBuscar = document.querySelector("#boton-comparar");
 const TotalCampeones = 4-1; //Total - 1 para los arrays
-const TotalFrases = 2-1; //Total -1 para las frases
+const TotalFrases = 4-1; //Total -1 para las frases
 botonBuscar.addEventListener("click", function(){
 
     var xhr = new XMLHttpRequest;
@@ -13,7 +13,7 @@ botonBuscar.addEventListener("click", function(){
     
 
     var posicionCampeon = aleatorio(TotalCampeones);  // De campeones
-    var posicionFrase= aleatorio(1);                // Cantidad de frases
+    var posicionFrase= aleatorio(TotalFrases);                // Cantidad de frases
     
 
     posicionarAleatoriamente(campeones);

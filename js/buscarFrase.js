@@ -183,8 +183,8 @@ function devolverArrayDeTres(opciones,opcionCorrecta){
     if(opciones.indexOf(opcionCorrecta)>=4){
 
         opciones = opciones.slice(0,3);
-        opciones.push(opcionCorrecta);
-        console.log(opciones);
+        opciones.splice(aleatorio(3),0,opcionCorrecta);
+        console.log("Esta son las opciones despuesd el slice: " + opciones);
         return opciones;
     }
     else {

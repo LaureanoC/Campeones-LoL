@@ -153,4 +153,17 @@ a {
 
 
 
+@media (min-width:500px) and (max-width:900px) {
 
+       
+
+    html {
+                    font-size:0.65rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    html {
+                    font-size: 55%;
+    }

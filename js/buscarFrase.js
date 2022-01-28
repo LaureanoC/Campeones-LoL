@@ -1,6 +1,7 @@
 var botonBuscar = document.querySelector("#boton-comparar");
-const TotalCampeones = 8-1; //Total - 1 para los arrays
-const TotalFrases = 4-1; //Total -1 para las frases
+var TotalCampeones = 13-1; 
+var TotalFrases = 4-1; //Total -1 para las frases  11 KowMaw
+var campeones;
 botonBuscar.addEventListener("click", function(){
 
     var xhr = new XMLHttpRequest;
@@ -8,9 +9,10 @@ botonBuscar.addEventListener("click", function(){
     
     xhr.addEventListener("load",function(){
     
-    var campeones = xhr.responseText; 
+    campeones = xhr.responseText; 
     campeones = JSON.parse(campeones);
-
+   //Total - 1 para los arrays
+   
     var posicionCampeon = aleatorio(TotalCampeones);  // De campeones
     var posicionFrase= aleatorio(TotalFrases);                // Cantidad de frases
     cambiarFraseActual(campeones,posicionCampeon,posicionFrase);
@@ -103,6 +105,7 @@ function cambiarNombreBoton(campeones,pcamp,pfrase){
     opciones = posicionarAleatoriamente(campeones);
 
     console.log(opciones.indexOf(nombreCampeon));
+    console.log(nombreCampeon);
 
     console.log(opciones);
 

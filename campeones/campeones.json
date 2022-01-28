@@ -86,5 +86,61 @@
             "Seremos amigos para siempre"
         ]
 
+    },
+
+    {
+        "nombre":"Ahri",
+        "frases": [
+            "Se acabaron los juegos...",
+            "Ahora son míos...",
+            "Cuentame un secreto ¿No confías en mi?",
+            "Haré que se te acelere el pulso o que se te detenga"
+        ]
+
+    },
+
+    {
+        "nombre":"Leona",
+        "frases": [
+            "¡Ay! Una uña rota... Al menos no es mía",
+            "El sol siempre sale",
+            "Se acerca la primera luz",
+            "Unete a mis filas"
+        ]
+
+    },
+
+    {
+        "nombre":"Kog maw",
+        "frases": [
+            "Hora del banquete",                                                    
+            "Viene el terror, ¡Ahí viene papa!",
+            "Totototorotototototoroo",
+            "Huele a carne fresca..."
+        ]
+
+    },
+
+    {
+        "nombre":"Vi",
+        "frases": [
+            "Golpea primero, pregunta mientras golpees",                                                    
+            "Aquí mis dos grandes amigos desean conocerte",
+            "Si le das a un muro, ¡Dale fuerte!",
+            "¡Ahi va mi derechazo!"
+        ]
+
+    },
+
+    {
+        "nombre":"Skarner",
+        "frases": [
+            "Uoooh, creo que pisé un primo mío",                                                    
+            "Viene el terror, ¡Ahí viene papa!",
+            "Mi aguijón trae una muerte atroz",
+            "¡Siente mi aguijón!"
+        ]
+
     }
 ]
+ 

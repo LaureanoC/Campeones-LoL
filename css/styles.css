@@ -70,8 +70,21 @@ body{
     background-color: #1f618d;
     color:#072335;
     font-family: 'Comfortaa', cursive;
+    cursor:pointer;
 
 }
+
+
+#boton-campeon:hover{
+
+    background-color: #072335;
+    color:white;
+    transition: 0.5s;
+}
+
+
+
+
 
 .espaciado{
 

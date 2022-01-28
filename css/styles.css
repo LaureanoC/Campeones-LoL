@@ -160,10 +160,23 @@ a {
     html {
                     font-size:0.65rem;
     }
+
+    .container-main, .container-boton{
+
+    width: 60%;
+    }
+
 }
 
 @media (max-width: 500px) {
 
     html {
-                    font-size: 55%;
+                    font-size: 60%;
+
     }
+
+    .container-main, .container-boton{
+
+    width: 60%;
+    }
+}

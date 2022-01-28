@@ -86,7 +86,7 @@ function sumarErrados(puntajeErrado){
 
     puntajeErrado = puntajeErrado + 1; 
     var puntoErrado = document.querySelector(".puntoErrado");
-    puntoErrado.innerHTML = ("Erradas:  " + puntajeErrado);
+    puntoErrado.innerHTML = ("Errados:  " + puntajeErrado);
     return puntajeErrado
 
 
@@ -96,7 +96,7 @@ function sumarContador(puntajeAcertado){
 
     puntajeAcertado = puntajeAcertado + 1; 
     var puntoAcertado = document.querySelector(".puntoAcertado");
-    puntoAcertado.innerHTML = ("Acertadas:  " + puntajeAcertado);
+    puntoAcertado.innerHTML = ("Acertados:  " + puntajeAcertado);
     return puntajeAcertado
 
 

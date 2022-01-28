@@ -38,15 +38,9 @@ body{
     
     font-family: 'Ubuntu Mono', monospace;
     text-align: center;
+    font-size: 2rem;
     flex: 1 0 100%;
     
-
-}
-
-
-.container-footer{
-    display:flex;
-    background-color: #1A5276;
 
 }
 
@@ -54,6 +48,7 @@ body{
 
     font-family: 'Comfortaa', cursive;
     text-align: center;
+    font-size: 1.4rem;
     flex: 1 0 100%;
 }
 
@@ -69,5 +64,69 @@ body{
    
     flex: 2 0;
     padding: 0.7rem; 
+    outline: none;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #1f618d;
+    color:#072335;
+    font-family: 'Comfortaa', cursive;
+
 }
+
+.espaciado{
+
+    margin:7.7rem;
+
+}
+
+.espaciadofooter{
+
+    padding:8rem;
+    background-color:#072335 ;
+
+}
+
+footer{
+    background-color: #1f618d;
+}
+
+.container-footer{
+    background-color: #1F618D;
+    width: 20%;
+    max-width:1920px;
+    margin: 0 auto;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-bottom:1.5rem;
+  
+}
+
+.footer-frase{
+
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 1.3rem;
+    flex: 1 0 100%;
+}
+
+i{
+   
+    color:#072335;
+    font-size: 2rem;
+
+}
+
+.redes-sociales{
+
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    
+}
+
 

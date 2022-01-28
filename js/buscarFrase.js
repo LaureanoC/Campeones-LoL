@@ -1,6 +1,8 @@
 var xhr = new XMLHttpRequest;
 var TotalCampeones = 13-1; // Total - 1   ->  11 KowMaw
-var TotalFrases = 4-1; //Total -1 para las frases  
+var TotalFrases = 4-1; //Total -1 para las frases
+var puntajeAcertado = 0;
+var puntajeErrado = 0;   
 
 xhr.open("GET","https://raw.githubusercontent.com/LaureanoC/Campeones-LoL/master/campeones/campeones.json");
     
@@ -32,10 +34,10 @@ xhr.addEventListener("load",function(){
 
     var botones = document.querySelector(".container-boton");
 
-    botones.addEventListener("click",function(){
+    botones.addEventListener("click",function(event){
 
     var botonOpcion = document.querySelectorAll("#boton-campeon");
-    console.log(botonOpcion[0]);
+    
 
     console.log(this.textContent);
 
@@ -45,7 +47,29 @@ xhr.addEventListener("load",function(){
     
     var nombre = buscarFraseConNombre(fraseActual,campeones);
 
+    console.log(botonOpcion[0]);
+    console.log(botonOpcion[0].textContent);
     console.log("Esta es la frase actual: " + fraseActual + "  " + nombre);
+    console.log(event.target.textContent);
+
+   
+
+    if(event.target.textContent == nombre){
+
+    console.log("Has acertado");
+    puntajeAcertado = sumarContador(puntajeAcertado);
+    var posicionCampeon = aleatorio(TotalCampeones);  // De campeones
+    var posicionFrase= aleatorio(TotalFrases);                // Cantidad de frases
+    cambiarFraseActual(campeones,posicionCampeon,posicionFrase);
+    cambiarNombreBoton(campeones,posicionCampeon, posicionFrase);
+
+    }
+    else {
+
+    puntajeErrado = sumarErrados(puntajeErrado);
+
+    }
+
 
     console.log(opciones);
 
@@ -53,16 +77,30 @@ xhr.addEventListener("load",function(){
 });
 
 
-
-
-
-
 });
 
 xhr.send();
 
 
+function sumarErrados(puntajeErrado){
 
+    puntajeErrado = puntajeErrado + 1; 
+    var puntoErrado = document.querySelector(".puntoErrado");
+    puntoErrado.innerHTML = ("Erradas:  " + puntajeErrado);
+    return puntajeErrado
+
+
+}
+
+function sumarContador(puntajeAcertado){
+
+    puntajeAcertado = puntajeAcertado + 1; 
+    var puntoAcertado = document.querySelector(".puntoAcertado");
+    puntoAcertado.innerHTML = ("Acertadas:  " + puntajeAcertado);
+    return puntajeAcertado
+
+
+}
 
 //Esta funcion primero para cada campeon itera todas sus frases y la compara con al frase actual
 

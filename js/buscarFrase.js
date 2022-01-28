@@ -1,8 +1,8 @@
 var xhr = new XMLHttpRequest;
-var TotalCampeones = 13-1; // Total - 1   ->  11 KowMaw
+var TotalCampeones = 31-1; // Total - 1   ->  11 KowMaw
 var TotalFrases = 4-1; //Total -1 para las frases
 var puntajeAcertado = 0;
-var puntajeErrado = 0;   
+var puntajeErrado = -1;   
 
 xhr.open("GET","https://raw.githubusercontent.com/LaureanoC/Campeones-LoL/master/campeones/campeones.json");
     

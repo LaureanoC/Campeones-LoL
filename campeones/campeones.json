@@ -141,6 +141,206 @@
             "¡Siente mi aguijón!"
         ]
 
+    },
+
+    {
+        "nombre":"Lulu",
+        "frases": [
+            "Encantada de conocerte",                                                    
+            "Sabe a púrpura",
+            "Nunca mires a un tulipan a los ojos",
+            "¡ENORMIZAR!"
+        ]
+
+    },
+
+    {
+        "nombre":"Lux",
+        "frases": [
+            "Shhh, estoy cargando mi laser",                                                    
+            "Un arcoiris doble ¿Quieres saber que significa?",
+            "Me encanta que los planes salgan bien",
+            "Iluminando el camino"
+        ]
+
+    },
+
+    {
+        "nombre":"Jinx",
+        "frases": [
+            "Tienes 3 segundos para YA! jajaja",                                                    
+            "No hay necesidad de tener miedo... ¡Ni vida!",
+            "¡Todo el mundo a sentir pánico!",
+            "Oye Carapescado ¿Quieres que volemos algo?"
+        ]
+
+    },
+
+    {
+        "nombre":"Caitlyn",
+        "frases": [
+            "Tóma, a la cabeza",                                                    
+            "Lo siento, las esposas de peluche las tengo en casa",
+            "El todo es mayor que la suma de sus... partes",
+            "¿Yo? ¿Fallar? Ni por error"
+        ]
+
+    },
+
+    {
+        "nombre":"Singed",
+        "frases": [
+            "¿Qué tal un trago?",                                                    
+            "Agitar o no agitar",
+            "Agitado, pero no revuelto",
+            "Mezclar mezclar girar mezclar"
+        ]
+
+    },
+
+    {
+        "nombre":"Fizz",
+        "frases": [
+            "El asombroso tiburón asecha a su presa",                                                    
+            "HMM huele a pescado podrido",
+            "¡Hacia a las profundidades!",
+            "HMM ¡Un pez un pez!"
+        ]
+
+    },
+
+    {
+        "nombre":"Annie",
+        "frases": [
+            "¿Tú también quieres jugar? Será divertido",                                                    
+            "De Tin marin de Don ¡Te quemé!",
+            "Sol solecito quemense un poquito",
+            "¿Cual es tu animal favorito? ¿El oso? Jajaja"
+        ]
+
+    },
+
+    {
+        "nombre":"Teemo",
+        "frases": [
+            "Armado y preparado",                                                    
+            "Nunca subestimes el poder de los exploradores",
+            "El tamaño no lo es todo",
+            "Hop dos tres cuatro"
+        ]
+
+    },
+
+    {
+        "nombre":"Veigar",
+        "frases": [
+            "Soy malo, muy malo, requetemalooo",                                                    
+            "Cuando era pequeño... No no te burles alguna vez fui mas pequeño",
+            "¿Alto? No me digas alto, bueno si, dime alto",
+            "Si niegas la oscuridad de tu alma ¡Niegas tu poder!"
+        ]
+
+    },
+
+    {
+        "nombre":"Trundle",
+        "frases": [
+            "Esto dolerá MUCHO",                                                    
+            "Esta noche me siento codicioso",
+            "Pero si soy... El rey de los trolls",
+            "El troll con el garrote mas grande es el rey, esa es la unica regla"
+        ]
+
+    },
+
+    {
+        "nombre":"Ashe",
+        "frases": [
+            "No, enserio. Ponte esa manzana sobre la cabeza",                                                    
+            "¡Ay! ¿Quien hace una arco con hielo?",
+            "No confundas la piedad con la debilidad",
+            "¿Mas veloz que mi flecha? No lo creo"
+        ]
+
+    },
+
+    {
+        "nombre":"Vel koz",
+        "frases": [
+            "El conocimiento mediante... la desintegración",                                                    
+            "Que fascinante evolución",
+            "Extrañas criaturas de carne y hueso",
+            "Humanos... Simples y caoticos. Excepcionales"
+        ]
+
+    },
+
+    {
+        "nombre":"Neeko",
+        "frases": [
+            "¡Quiero convertirme en todos!",                                                    
+            "Solo soy yo haciendo cosas que hago yop, nada sospechoso",
+            "Cambiar cuerpos es como cambiar la mente, fácil",
+            "Los espiritus están a mi alrededor, son cálidos como: Abrazos"
+        ]
+
+    },
+
+    {
+        "nombre":"Ziggs",
+        "frases": [
+            "Esto va a ser la bomba",                                                    
+            "No queda mecha no queda mecha",
+            "¡Va a explotar!",
+            "¿¡Quieres ver como se desactiva una bomba!?"
+        ]
+
+    },
+
+    {
+        "nombre":"Varus",
+        "frases": [
+            "La culpa dará lugar a la agonía",                                                    
+            "Mis flechas siempre aciertan en su objetivo",
+            "Estoy disfrutando de un tiempo prestado",
+            "Solo los cobardes huyen de su destino"
+        ]
+
+    },
+
+    {
+        "nombre":"Heimerdinger",
+        "frases": [
+            "Una sabia decisión",                                                    
+            "¡Atras! Estoy a punto de hacer ciencia",
+            "¿Como puedes hacer que la gente sea mas positiva? Pues fácil, haz que pierdan un electrón",
+            "Un paso mas cerca a una mejor comprensión"
+        ]
+
+    },
+
+    {
+        "nombre":"Shaco",
+        "frases": [
+            "¿Qué tal un truco de magia?",                                                    
+            "Te salió el tiro por la culata",
+            "Con mi siguiente truco, te haré desaparecer muahahaha",
+            "¡Marchen marchen marchen marchen!"
+        ]
+
+    },
+
+    {
+        "nombre":"Cho Gath",
+        "frases": [
+            "¿Deseas ver encender un mundo que conoces? Si...",                                                    
+            "Ñam ñam ñam ñam ñam",
+            "Invocador, la oscuridad se cierne sobre ti",
+            "Los invadiré de terror"
+        ]
+
     }
+
+
 ]
  

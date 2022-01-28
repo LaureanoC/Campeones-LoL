@@ -1,29 +1,92 @@
-var botonBuscar = document.querySelector("#boton-comparar");
-var TotalCampeones = 13-1; 
-var TotalFrases = 4-1; //Total -1 para las frases  11 KowMaw
-var campeones;
-botonBuscar.addEventListener("click", function(){
+var xhr = new XMLHttpRequest;
+var TotalCampeones = 13-1; // Total - 1   ->  11 KowMaw
+var TotalFrases = 4-1; //Total -1 para las frases  
 
-    var xhr = new XMLHttpRequest;
-    xhr.open("GET","https://raw.githubusercontent.com/LaureanoC/Campeones-LoL/master/campeones/campeones.json");
+xhr.open("GET","https://raw.githubusercontent.com/LaureanoC/Campeones-LoL/master/campeones/campeones.json");
     
-    xhr.addEventListener("load",function(){
+xhr.addEventListener("load",function(){
     
-    campeones = xhr.responseText; 
+    var campeones = xhr.responseText;
+    console.log(typeof campeones);
+    console.log(campeones);
     campeones = JSON.parse(campeones);
-   //Total - 1 para los arrays
-   
+    console.log(campeones); 
+
+// Ya cargué todos los objetos compeones
+
+
+
+//Cambio de frase al hacer click en "Siguiente"
+
+    var botonBuscar = document.querySelector("#boton-comparar");
+    botonBuscar.addEventListener("click", function(){
     var posicionCampeon = aleatorio(TotalCampeones);  // De campeones
     var posicionFrase= aleatorio(TotalFrases);                // Cantidad de frases
     cambiarFraseActual(campeones,posicionCampeon,posicionFrase);
     cambiarNombreBoton(campeones,posicionCampeon, posicionFrase);
-    console.log("Fin del cambiar nombre boton + " + campeones[posicionCampeon].nombre);
- 
+
     });
+
+
+    //Escoger la opcion correcta
+
+    var botones = document.querySelector(".container-boton");
+
+    botones.addEventListener("click",function(){
+
+    var botonOpcion = document.querySelectorAll("#boton-campeon");
+    console.log(botonOpcion[0]);
+
+    console.log(this.textContent);
+
+    opciones = devolverOpcionActual();
+
+    var fraseActual = devolverFraseActual();
     
-    xhr.send();
+    var nombre = buscarFraseConNombre(fraseActual,campeones);
+
+    console.log("Esta es la frase actual: " + fraseActual + "  " + nombre);
+
+    console.log(opciones);
+
 
 });
+
+
+
+
+
+
+});
+
+xhr.send();
+
+
+
+
+//Esta funcion primero para cada campeon itera todas sus frases y la compara con al frase actual
+
+function buscarFraseConNombre(fraseActual,campeon){
+
+    for(i=0;i<campeon.length;i++){
+
+        for(j=0; j<campeon[i].frases.length; j++){
+
+            console.log("Nombre: " + campeon[i].nombre + " frase: " + campeon[i].frases[j]);
+            
+            if(campeon[i].frases[j] == fraseActual){
+
+                console.log("ACA ESTA LA FRASE ACTUAL: " + campeon[i].frases[j]);
+                
+                return campeon[i].nombre;
+
+            }
+
+        }
+
+    }
+    
+}
 
 function aleatorio(n){
 
@@ -67,6 +130,7 @@ function cambiarFraseActual(campeones,pcamp,pfrase){
         fraseSiguiente = cambiarFraseActual(campeones,pcamp,aleatorio(TotalFrases));
     }
 
+    
 }
 
 function devolverFraseActual(){

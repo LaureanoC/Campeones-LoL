@@ -339,7 +339,99 @@
             "Los invadiré de terror"
         ]
 
+    },
+
+    {
+        "nombre":"Soraka",
+        "frases": [
+            "Mientras viva nadie conocerá el sufrimiento",                                                    
+            "¿Siempre peleas así de mal?",
+            "Si, eso era una banana. Jajaja nadie se espera a la banana",
+            "Para curar y proteger"
+        ]
+
+    },
+
+    {
+        "nombre":"Lee sin",
+        "frases": [
+            "Tu voluntad, mis manos",                                                    
+            "La ceguera no es un problema contra un enemigo apestoso",
+            "Dominate a ti mismo, domina al enemigo",
+            "La fuerza sin control no sirve de nada"
+        ]
+
+    },
+
+    {
+        "nombre":"Garen",
+        "frases": [
+            "¡Mi corazon y mi espada, siempre por demacia!",                                                    
+            "Cargo un gran peso sobre mis hombros",
+            "¡Ey mira! Estoy sosteniendo el mundo",
+            "¡No importa cuantos sean, nunca me rendire!"
+        ]
+
+    },
+
+    {
+        "nombre":"Darius",
+        "frases": [
+            "Solo yo lograré que lleguemos a la victoria",                                                    
+            "La fuerza es lo mas importante",
+            "No tolerare la cobardía",
+            "¡Desafien a Noxus y probaran su sangre!"
+        ]
+
+    },
+
+    {
+        "nombre":"Karma",
+        "frases": [
+            "Confía siempre en tu espiritu",                                                    
+            "Karma siempre termina llegando",
+            "Ví dos caminos... Y cree uno en medio",
+            "La respuesta está en el interior"
+        ]
+
+    },
+
+    {
+        "nombre":"Tristana",
+        "frases": [
+            "¡Marchando al ritmo de un cañon con Bandle va mi corazon!",                                                    
+            "¡Por aire tierra y altamar Bandle siempre va a triunfar!",
+            "¿Donde está la acción?",
+            "Solo dime a donde apuntar"
+        ]
+
+    },
+
+    {
+        "nombre":"Braum",
+        "frases": [
+            "¡Mi escudo es mi espada!",                                                    
+            "Vamos a mostrarles la puerta a nuestros amiguitos",
+            "Si te portas mal ¡Hay puerta!",
+            "Avanzando como un rebaño"
+        ]
+
+    },
+
+    {
+        "nombre":"Draven",
+        "frases": [
+            "",                                                    
+            "Vamos a mostrarles la puerta a nuestros amiguitos",
+            "Si te portas mal ¡Hay puerta!",
+            "Avanzando como un rebaño"
+        ]
+
     }
+
+
+
+    
 
 
 ]

@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest;
-var TotalCampeones = 31-1; // Total - 1   ->  11 KowMaw
+var TotalCampeones = 39-1; // Total - 1   ->  11 KowMaw
 var TotalFrases = 4-1; //Total -1 para las frases
 var puntajeAcertado = 0;
 var puntajeErrado = -1;   
@@ -12,7 +12,7 @@ xhr.addEventListener("load",function(){
     console.log(typeof campeones);
     console.log(campeones);
     campeones = JSON.parse(campeones);
-    console.log(campeones); 
+    console.log(campeones.length); 
 
 // Ya cargué todos los objetos compeones
 
@@ -22,6 +22,7 @@ xhr.addEventListener("load",function(){
 
     var botonBuscar = document.querySelector("#boton-comparar");
     botonBuscar.addEventListener("click", function(){
+    botonBuscar.innerHTML = "Siguiente";
     var posicionCampeon = aleatorio(TotalCampeones);  // De campeones
     var posicionFrase= aleatorio(TotalFrases);                // Cantidad de frases
     cambiarFraseActual(campeones,posicionCampeon,posicionFrase);
